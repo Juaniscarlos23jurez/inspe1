@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inspe"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".respuestaNo"
+            android:exported="false" />
+        <activity
+            android:name=".dininternet.previdatos"
+            android:exported="false" />
+        <activity
+            android:name=".Previsualizacionsininternet"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet9"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet8"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet7"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet6"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet5"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet4"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet3"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet2"
+            android:exported="false" />
+        <activity
+            android:name=".sinInternet"
+            android:exported="false" />
+        <activity
+            android:name=".pdf"
+            android:exported="false" />
+        <activity
+            android:name=".perfil"
+            android:exported="false" />
+        <activity
+            android:name=".previsualizacion"
+            android:exported="false" />
+        <activity
+            android:name=".edicionem"
+            android:exported="false" />
+        <activity
+            android:name=".seleccionqr"
+            android:exported="false" />
+        <activity
+            android:name=".codigoQr"
+            android:exported="false" />
+        <activity
+            android:name=".Huella1iActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loguep1"
+            android:exported="false" />
+        <activity
+            android:name=".huellajava"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".datos.MainActivityaut"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlqL4-hbOj7gLTiP5uO_rlOIEcyijDg4E" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

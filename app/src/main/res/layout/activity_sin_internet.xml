@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sinInternet">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/numeorInforme"
+                android:layout_width="78dp"
+                android:layout_height="48dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Numero de informe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Informe"
+                android:layout_width="78dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Acompañante"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.006"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numeorInforme" />
+
+            <EditText
+                android:id="@+id/numerorespues"
+                android:layout_width="265dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/Informe"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+
+            <TextView
+                android:id="@+id/pregunta3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Numero de tienda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Informe" />
+
+            <TextView
+                android:id="@+id/respuesta3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pregunta3"
+                app:layout_constraintTop_toBottomOf="@+id/numerorespues" />
+
+            <TextView
+                android:id="@+id/pregunta4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Nombre de tienda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta3" />
+
+            <TextView
+                android:id="@+id/respuesta4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pregunta4"
+                app:layout_constraintTop_toBottomOf="@+id/respuesta3" />
+
+            <TextView
+                android:id="@+id/pregunta5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Formato de tienda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta4" />
+
+            <TextView
+                android:id="@+id/respuesta5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toEndOf="@+id/pregunta5"
+                app:layout_constraintTop_toBottomOf="@+id/respuesta4" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/datos"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="SELECCIONAR TIPO DE AUDITORIA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.808"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta5">
+
+                <AutoCompleteTextView
+                    android:id="@+id/AutoCompleteTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/departamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="departamentos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.808"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="1561dp"
+                app:layout_constraintTop_toBottomOf="@+id/datos" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Alimentos Preparados"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/departamentos" />
+            <Button
+                android:id="@+id/seccion2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Panadería"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+            <Button
+                android:id="@+id/seccion3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Tortillería"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion2" />
+            <Button
+                android:id="@+id/seccion4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Pescados"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion3" />
+            <Button
+                android:id="@+id/seccion5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Carnes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion4" />
+            <Button
+                android:id="@+id/seccion6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Frutas y verduras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion5" />
+            <Button
+                android:id="@+id/seccion7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="S,L y C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion6" />
+            <Button
+                android:id="@+id/seccion8"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Consumos Internos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion7" />
+            <Button
+                android:id="@+id/seccion9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Cisterna"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion8" />
+            <Button
+                android:id="@+id/seccion10"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Recibo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion9" />
+            <Button
+                android:id="@+id/seccion11"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Sanitarios Clientes Damas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion10" />
+            <Button
+                android:id="@+id/seccion12"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Sanitarios Clientes Caballeros"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion11" />
+            <Button
+                android:id="@+id/seccion13"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Sanitarios Colaboradores Damas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion12" />
+            <Button
+                android:id="@+id/seccion14"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="20dp"
+                android:text="Sanitarios Colaboradores Caballeros"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion13" />
+
+
+            <TextView
+                android:id="@+id/pregunta10"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Comentarios generales del cliente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seccion14" />
+
+            <EditText
+                android:id="@+id/respuesta10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Comentario"
+                android:padding="8dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta10" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="220dp"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.901"
+                app:layout_constraintStart_toEndOf="@+id/numeorInforme"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="finalizar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/respuesta10"
+                app:layout_constraintTop_toBottomOf="@+id/respuesta10" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

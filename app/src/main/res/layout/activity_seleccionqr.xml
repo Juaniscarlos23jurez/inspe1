@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seleccionqr">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Alimentos Preparados"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/seccion2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Panadería"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+    <Button
+        android:id="@+id/seccion3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Tortillería"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion2" />
+    <Button
+        android:id="@+id/seccion4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Pescados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion3" />
+    <Button
+        android:id="@+id/seccion5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Carnes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion4" />
+    <Button
+        android:id="@+id/seccion6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Frutas y verduras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion5" />
+    <Button
+        android:id="@+id/seccion7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="S,L y C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion6" />
+    <Button
+        android:id="@+id/seccion8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Consumos Internos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion7" />
+    <Button
+        android:id="@+id/seccion9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Cisterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion8" />
+    <Button
+        android:id="@+id/seccion10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Recibo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion9" />
+    <Button
+        android:id="@+id/seccion11"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Sanitarios Clientes Damas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion10" />
+    <Button
+        android:id="@+id/seccion12"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Sanitarios Clientes Caballeros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion11" />
+    <Button
+        android:id="@+id/seccion13"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Sanitarios Colaboradores Damas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion12" />
+    <Button
+        android:id="@+id/seccion14"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="20dp"
+        android:text="Sanitarios Colaboradores Caballeros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion13" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
